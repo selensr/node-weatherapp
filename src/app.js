@@ -23,22 +23,22 @@ app.use(express.static(publicDirectoryPath));
 app.get("", (req, res) => {
   res.render("index", {
     title: "Weather",
-    name: "Selen Şar"
+    name: "Selen Sr"
   });
 });
 
 app.get("/about", (req, res) => {
   res.render("about", {
     title: "About Me",
-    name: "Selen Şar"
+    name: "Selen Sr"
   });
 });
 
 app.get("/help", (req, res) => {
   res.render("help", {
-    message: "Get some help",
+    message: "Get some help...",
     title: "Help",
-    name: "Selen Şar"
+    name: "Selen Sr"
   });
 });
 
@@ -86,7 +86,7 @@ app.get("/products", (req, res) => {
 app.get("/help/*", (req, res) => {
   res.render("404", {
     title: "404",
-    name: "Selen Şar",
+    name: "Selen Sr",
     errorMessage: "Help article not found"
   });
 });
@@ -94,7 +94,7 @@ app.get("/help/*", (req, res) => {
 app.get("*", (req, res) => {
   res.render("404", {
     title: "404",
-    name: "Selen Şar",
+    name: "Selen Sr",
     errorMessage: "Page not found"
   });
 });
